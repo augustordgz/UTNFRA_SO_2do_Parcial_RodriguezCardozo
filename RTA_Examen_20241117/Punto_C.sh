@@ -1,3 +1,4 @@
+#!/bin/bash
 cd /home/vagrant/repogit/UTN-FRA_SO_Examenes/202406/docker/
 
 nano index.html

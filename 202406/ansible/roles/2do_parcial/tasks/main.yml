@@ -11,18 +11,18 @@
     path: "/tmp/2do_parcial/{{ item }}"
     state: directory
   with_items:
-    - alumno
+    - usuario
     - equipo
 
-- name: Crear archivo datos_alumno.txt
+- name: Crear archivo datos_usuario.txt
   template:
-    src: datos_alumno.txt
-    dest: "/tmp/2do_parcial/alumno/datos_alumno.txt"
+    src: datos_usuario.txt
+    dest: "/tmp/2do_parcial/templates/datos_usuario.txt"
 
 - name: Crear archivo datos_equipo.txt
   template:
     src: datos_equipo.txt
-    dest: "/tmp/2do_parcial/equipo/datos_equipo.txt"
+    dest: "/tmp/2do_parcial/templates/datos_equipo.txt"
 
 - name: Modificar sudoers para usuarios de 2PSupervisores
   become: yes

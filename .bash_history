@@ -370,3 +370,35 @@ git add .
 git commit -m "ADD: Agrego script Punto_D y bash history"
 git push
 cd ..
+cp -r .bash_history repogit/UTNFRA_SO_2do_Parcial_RodriguezCardozo/
+cd repogit/UTNFRA_SO_2do_Parcial_RodriguezCardozo/
+git add .
+git status
+git commit -m "ADD: Agrego bash history"
+git push
+cd ..
+cd UTN-FRA_SO_Examenes/202406
+ls
+cd docker
+ls
+nano dockerfile 
+cd ..
+ls
+cd ansible/
+ls
+cd roles/2do_parcial/
+ls
+cd tasks/
+ls
+nano main.yml 
+cd /home/vagrant/
+ls
+cd repogit/UTNFRA_SO_2do_Parcial_RodriguezCardozo/
+cd ..
+cd RTA_Examen_20241117/
+nano Punto_C,sh
+nano Punto_C.sh
+nano Punto_D.sh
+cd ..
+cp -r UTN-FRA_SO_Examenes/202406/ UTNFRA_SO_2do_Parcial_RodriguezCardozo
+ls

@@ -15,7 +15,7 @@ cat <<EOF>> tasks/main.yml
 - name: Crear archivo de datos del alumno
   template:
     src: templates/datos_usuario.txt.j2
-    dest: /tmp/2do_parcial/alumno/datos_usuario.txt
+    dest: /tmp/2do_parcial/templates/datos_usuario.txt
   vars:
     Nombre: "Augusto Martin"
     Apellido: "Rodriguez Cardozo"
@@ -24,7 +24,7 @@ cat <<EOF>> tasks/main.yml
 - name: Crear archivo de datos del equipo
   template:
     src: templates/datos_equipo.txt.j2
-    dest: /tmp/2do_parcial/equipo/datos_equipo.txt
+    dest: /tmp/2do_parcial/templates/datos_equipo.txt
   vars:
     ip: "192.168.56.3"
     distro: "jammy-ubuntu"
