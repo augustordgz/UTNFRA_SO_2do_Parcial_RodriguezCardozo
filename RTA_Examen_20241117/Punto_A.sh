@@ -28,8 +28,9 @@ t
 w
 
 sudo fdisk -l
-sudo wipefs -a /dev/sdc
-sudo wipefs -a /dev/sde
+sudo wipefs -a /dev/sdc1
+sudo wipefs -a /dev/sdc2
+sudo wipefs -a /dev/sde1
 
 sudo pvcreate /dev/sdc1 /dev/sdc2
 sudo pvcreate /dev/sde1
@@ -45,8 +46,12 @@ sudo lvcreate -L +512M vg_temp -n lv_swap
 
 sudo mkfs.ext4 /dev/mapper/vg_datos-lv_docker
 sudo mkfs.ext4 /dev/mapper/vg_datos-lv_workareas
+sudo mkfs.ext4 /dev/mapper/vg_temp-lv_swap
+
 sudo mkswap /dev/mapper/vg_temp-lv_swap
 sudo swapon /dev/mapper/vg_temp-lv_swap
+
+sudo mkdir work
 
 sudo mount /dev/mapper/vg_datos-lv_docker /var/lib/docker/
 sudo mount /dev/mapper/vg_datos-lv_workareas /work/
