@@ -1,0 +1,3 @@
+IP: 181.46.185.101
+Distribución: jammy-ubuntu
+Cantidad de Cores: 4
